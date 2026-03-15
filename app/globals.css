@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-brand-orange: #E96F1F;
+  --color-brand-orange-hover: #D86315;
+  --color-brand-dark: #111111;
+  --color-brand-gray: #F5F5F5;
+  --color-brand-dark-card: #212121;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-inter), sans-serif;
+  --font-heading: var(--font-plus-jakarta), sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  background: white;
+  color: var(--color-brand-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+.hero-gradient {
+  background-image: linear-gradient(90deg, rgba(13, 13, 13, 0.62), rgba(245, 245, 245, 0));
+}
+
+@media (max-width: 640px) {
+  .hero-gradient {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(128, 128, 128, 0));
+  }
+}
+
+.overlay-dark {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88));
+}
+
+.glass-tag {
+  background-color: #fadfcc;
+  color: var(--color-brand-orange);
+}
+
+.glass-tag-2 {
+  background-color: rgba(250, 222, 204, 0.94);
+  color: #212121;
+  transition: all 0.3s ease-in-out;
+}
+
+.glass-tag-2:hover {
+  background-color: var(--color-brand-orange);
+  color: white;
 }

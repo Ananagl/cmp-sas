@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const servicios = [
@@ -15,9 +16,13 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <div className="w-32 h-10 bg-gray-800 rounded mb-4 flex items-center justify-center text-gray-600 font-bold text-xs">
-              CMP SAS Logo
-            </div>
+            <Image
+              src="/logoletra.svg"
+              alt="CMP SAS Corrosion y Proof Coating - Sandblasting y recubrimientos industriales en Cartagena"
+              width={180}
+              height={40}
+              className="h-10 w-auto mb-4"
+            />
             <p className="text-sm mb-4">
               Empresa especializada en sandblasting, recubrimientos industriales y protección anticorrosiva en Cartagena, Colombia.
             </p>

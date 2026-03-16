@@ -60,6 +60,12 @@ export const metadata: Metadata = {
     images: ["/images/sandblasting-industrial-cartagena-cmp-sas.webp"],
   },
   robots: { index: true, follow: true },
+  icons: {
+    icon: [
+      { url: "/logo.svg", type: "image/svg+xml" },
+    ],
+    apple: "/logo.svg",
+  },
   other: {
     "theme-color": "#E96F1F",
   },

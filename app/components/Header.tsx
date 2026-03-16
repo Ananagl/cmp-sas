@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 
@@ -23,9 +24,14 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/">
-              <div className="w-48 h-12 bg-gray-200 rounded animate-pulse flex items-center justify-center text-gray-500 font-bold">
-                CMP SAS Logo
-              </div>
+              <Image
+                src="/logoletra.svg"
+                alt="CMP SAS Corrosion y Proof Coating - Sandblasting y recubrimientos industriales en Cartagena"
+                width={200}
+                height={45}
+                priority
+                className="h-11 w-auto"
+              />
             </Link>
           </div>
 

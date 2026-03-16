@@ -15,14 +15,14 @@ import { CTASection } from "./components/CTASection";
 import { JsonLd } from "./components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "CMP SAS - Sandblasting y Recubrimientos Industriales en Cartagena",
+  title: "Sandblasting y Recubrimientos Industriales en Colombia",
   description:
-    "Empresa líder en sandblasting, ecoblasting y recubrimientos industriales en Cartagena. Certificaciones NACE/SSPC. +30,000 m² tratados. Cotiza ahora.",
+    "CMP SAS: empresa líder en sandblasting, ecoblasting y recubrimientos industriales en Colombia. Cartagena, Costa Caribe y todo el país. NACE/SSPC. +30,000 m² tratados.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "CMP SAS - Sandblasting y Recubrimientos Industriales en Cartagena",
+    title: "CMP SAS - Sandblasting y Recubrimientos Industriales en Colombia",
     description:
-      "Empresa líder en sandblasting, ecoblasting y recubrimientos industriales en Cartagena. Certificaciones NACE/SSPC. +30,000 m² tratados.",
+      "Empresa líder en sandblasting, ecoblasting y recubrimientos industriales en Colombia. Certificaciones NACE/SSPC. +30,000 m² tratados.",
     url: "/",
   },
 };
@@ -37,7 +37,7 @@ const localBusinessSchema = {
   image:
     "https://www.cmpcoating.com.co/images/sandblasting-industrial-cartagena-cmp-sas.webp",
   description:
-    "Empresa especializada en sandblasting, recubrimientos industriales y protección anticorrosiva en Cartagena, Colombia.",
+    "Empresa especializada en sandblasting, recubrimientos industriales y protección anticorrosiva en Colombia. Sede en Cartagena con cobertura en la Costa Caribe y todo el país.",
   telephone: "+573137804820",
   email: "ventasservicios@cmpcoating.com.co",
   address: {
@@ -54,10 +54,16 @@ const localBusinessSchema = {
   foundingDate: "2015",
   areaServed: [
     { "@type": "City", name: "Cartagena de Indias" },
+    { "@type": "AdministrativeArea", name: "Costa Caribe Colombiana" },
+    { "@type": "City", name: "Barranquilla" },
+    { "@type": "City", name: "Santa Marta" },
     { "@type": "Country", name: "Colombia" },
   ],
   knowsAbout: [
     "Sandblasting",
+    "Sandblasting Colombia",
+    "Sandblasting Cartagena",
+    "Sandblasting Costa Caribe",
     "Recubrimientos industriales",
     "Protección anticorrosiva",
     "NACE",
@@ -187,11 +193,12 @@ export default function Home() {
               CMP SAS Corrosion y Proof Coating
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Sandblasting y Recubrimientos Industriales en Cartagena
+              Sandblasting y Recubrimientos Industriales en Colombia
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl">
-              Protegemos y preservamos tu infraestructura con soluciones avanzadas de{" "}
-              <strong>sandblasting</strong>, preparación de superficies y recubrimientos anticorrosivos.
+              Protegemos tu infraestructura con soluciones avanzadas de{" "}
+              <strong>sandblasting</strong>, preparación de superficies y recubrimientos anticorrosivos
+              en <strong>Cartagena</strong>, la <strong>Costa Caribe</strong> y toda <strong>Colombia</strong>.
               Certificaciones NACE/SSPC.
             </p>
 
@@ -200,14 +207,14 @@ export default function Home() {
                 href="#contacto"
                 className="bg-[var(--color-brand-orange)] hover:bg-[var(--color-brand-orange-hover)] text-white px-8 py-4 rounded-xl font-bold text-center transition-all duration-300 transform hover:-translate-y-1 shadow-lg flex items-center justify-center"
               >
-                Contáctanos
+                Cotización Gratuita
                 <ChevronRight size={20} className="ml-2" />
               </a>
               <Link
-                href="/sandblasting-cartagena"
+                href="/sandblasting-colombia"
                 className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-xl font-bold text-center transition-all duration-300"
               >
-                Sandblasting en Cartagena
+                Sandblasting en Colombia
               </Link>
             </div>
 
@@ -240,7 +247,7 @@ export default function Home() {
             </h2>
             <p className="text-lg text-gray-600">
               Ofrecemos soluciones integrales de sandblasting, recubrimientos y protección anticorrosiva en Cartagena,
-              con la calidad y eficiencia que tu proyecto requiere.
+              la Costa Caribe y toda Colombia, con la calidad y eficiencia que tu proyecto requiere.
             </p>
           </div>
 
@@ -312,9 +319,9 @@ export default function Home() {
             </div>
 
             <div className="order-1 md:order-2">
-              <span className="text-[var(--color-brand-orange)] font-bold tracking-wider uppercase text-sm mb-4 block">
+              <Link href="/sobre-nosotros" className="text-[var(--color-brand-orange)] font-bold tracking-wider uppercase text-sm mb-4 block hover:text-[var(--color-brand-orange-hover)] transition-colors">
                 ¿Quienes Somos?
-              </span>
+              </Link>
               <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight">
                 Especialistas en la ejecución de mantenimientos e ingenierías
               </h2>
@@ -423,6 +430,60 @@ export default function Home() {
               superiores en cada proyecto, asegurando durabilidad, eficiencia y
               cumplimiento de estándares internacionales.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Geo Coverage Section */}
+      <section className="py-20 bg-[var(--color-brand-gray)]">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-12 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+              Sandblasting en toda Colombia
+            </h2>
+            <p className="text-lg text-gray-600">
+              Desde nuestra base en Cartagena de Indias, ofrecemos servicios de sandblasting y recubrimientos
+              industriales en la Costa Caribe y todo el territorio colombiano.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Link
+              href="/sandblasting-cartagena"
+              className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100 text-center group"
+            >
+              <div className="text-4xl font-extrabold text-[var(--color-brand-orange)] mb-3 group-hover:scale-110 transition-transform">
+                Cartagena
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Sandblasting en Cartagena</h3>
+              <p className="text-gray-600 text-sm">
+                Sector naval, Mamonal, zona industrial. Servicio certificado NACE/SSPC con respuesta inmediata.
+              </p>
+            </Link>
+            <Link
+              href="/sandblasting-costa-caribe"
+              className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100 text-center group"
+            >
+              <div className="text-4xl font-extrabold text-[var(--color-brand-orange)] mb-3 group-hover:scale-110 transition-transform">
+                Costa Caribe
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Sandblasting Costa Caribe</h3>
+              <p className="text-gray-600 text-sm">
+                Barranquilla, Santa Marta, Sincelejo y toda la región Caribe colombiana.
+              </p>
+            </Link>
+            <Link
+              href="/sandblasting-colombia"
+              className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100 text-center group"
+            >
+              <div className="text-4xl font-extrabold text-[var(--color-brand-orange)] mb-3 group-hover:scale-110 transition-transform">
+                Colombia
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Sandblasting en Colombia</h3>
+              <p className="text-gray-600 text-sm">
+                Cobertura nacional para proyectos industriales, offshore y de infraestructura.
+              </p>
+            </Link>
           </div>
         </div>
       </section>

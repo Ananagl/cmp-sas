@@ -14,9 +14,16 @@ const servicios = [
   { name: "Personal y Equipos", href: "/servicios/personal-equipos" },
 ];
 
+const sandblastingPages = [
+  { name: "Sandblasting en Cartagena", href: "/sandblasting-cartagena" },
+  { name: "Sandblasting en Colombia", href: "/sandblasting-colombia" },
+  { name: "Sandblasting Costa Caribe", href: "/sandblasting-costa-caribe" },
+];
+
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [serviciosOpen, setServiciosOpen] = useState(false);
+  const [sandblastingOpen, setSandblastingOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
@@ -26,7 +33,7 @@ export function Header() {
             <Link href="/">
               <Image
                 src="/logoletra.svg"
-                alt="CMP SAS Corrosion y Proof Coating - Sandblasting y recubrimientos industriales en Cartagena"
+                alt="CMP SAS Corrosion y Proof Coating - Sandblasting y recubrimientos industriales en Colombia"
                 width={200}
                 height={45}
                 priority
@@ -68,14 +75,38 @@ export function Header() {
                 ))}
               </div>
             </div>
-            <Link href="/#nosotros" className="text-gray-700 hover:text-[var(--color-brand-orange)] font-medium transition-colors">
+
+            <div className="relative group">
+              <button
+                className="text-[var(--color-brand-orange)] hover:text-[var(--color-brand-orange-hover)] font-bold transition-colors flex items-center gap-1"
+                onMouseEnter={() => setSandblastingOpen(true)}
+                onMouseLeave={() => setSandblastingOpen(false)}
+              >
+                Sandblasting
+                <ChevronDown size={16} />
+              </button>
+              <div
+                className={`absolute top-full left-0 bg-white shadow-xl rounded-xl border border-gray-100 py-2 w-64 transition-all duration-200 ${sandblastingOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"}`}
+                onMouseEnter={() => setSandblastingOpen(true)}
+                onMouseLeave={() => setSandblastingOpen(false)}
+              >
+                {sandblastingPages.map((s) => (
+                  <Link
+                    key={s.href}
+                    href={s.href}
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-brand-orange)] transition-colors"
+                  >
+                    {s.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <Link href="/sobre-nosotros" className="text-gray-700 hover:text-[var(--color-brand-orange)] font-medium transition-colors">
               Sobre nosotros
             </Link>
-            <Link href="/#contacto" className="text-gray-700 hover:text-[var(--color-brand-orange)] font-medium transition-colors">
+            <Link href="/contacto" className="text-gray-700 hover:text-[var(--color-brand-orange)] font-medium transition-colors">
               Contacto
-            </Link>
-            <Link href="/sandblasting-cartagena" className="text-[var(--color-brand-orange)] hover:text-[var(--color-brand-orange-hover)] font-bold transition-colors">
-              Sandblasting Cartagena
             </Link>
           </nav>
 
@@ -107,15 +138,29 @@ export function Header() {
                 {s.name}
               </Link>
             ))}
-            <Link href="/#nosotros" className="block text-gray-700 hover:text-[var(--color-brand-orange)] font-medium py-2" onClick={() => setMobileMenuOpen(false)}>
-              Sobre nosotros
-            </Link>
-            <Link href="/#contacto" className="block text-gray-700 hover:text-[var(--color-brand-orange)] font-medium py-2" onClick={() => setMobileMenuOpen(false)}>
-              Contacto
-            </Link>
-            <Link href="/sandblasting-cartagena" className="block text-[var(--color-brand-orange)] font-bold py-2" onClick={() => setMobileMenuOpen(false)}>
-              Sandblasting Cartagena
-            </Link>
+            <div className="border-t border-gray-100 pt-3">
+              <span className="block text-[var(--color-brand-orange)] font-bold py-2">
+                Sandblasting
+              </span>
+              {sandblastingPages.map((s) => (
+                <Link
+                  key={s.href}
+                  href={s.href}
+                  className="block text-gray-500 hover:text-[var(--color-brand-orange)] text-sm py-1 pl-4"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {s.name}
+                </Link>
+              ))}
+            </div>
+            <div className="border-t border-gray-100 pt-3">
+              <Link href="/sobre-nosotros" className="block text-gray-700 hover:text-[var(--color-brand-orange)] font-medium py-2" onClick={() => setMobileMenuOpen(false)}>
+                Sobre nosotros
+              </Link>
+              <Link href="/contacto" className="block text-gray-700 hover:text-[var(--color-brand-orange)] font-medium py-2" onClick={() => setMobileMenuOpen(false)}>
+                Contacto
+              </Link>
+            </div>
           </div>
         </div>
       )}

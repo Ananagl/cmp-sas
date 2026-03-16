@@ -13,9 +13,9 @@ import { Breadcrumbs } from "../components/Breadcrumbs";
 import { CTASection } from "../components/CTASection";
 
 export const metadata: Metadata = {
-  title: "Servicios de Sandblasting, Recubrimientos y Protección Industrial",
+  title: "Servicios de Sandblasting y Recubrimientos en Colombia",
   description:
-    "Todos nuestros servicios: sandblasting, ecoblasting, limpieza técnica, recubrimientos industriales, inspección y servicios offshore en Cartagena.",
+    "Servicios de sandblasting, ecoblasting, limpieza técnica, recubrimientos industriales, inspección y offshore en Colombia. Cartagena, Costa Caribe y todo el país.",
   alternates: { canonical: "/servicios" },
   openGraph: {
     title: "Servicios de Sandblasting y Recubrimientos | CMP SAS",

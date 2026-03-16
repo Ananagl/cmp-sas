@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { ContactForm } from "./forms/ContactForm";
 
 export function CTASection() {
   return (
@@ -73,49 +74,7 @@ export function CTASection() {
           <div className="lg:col-span-3">
             <div className="bg-white/[0.03] backdrop-blur-sm p-8 md:p-10 rounded-3xl border border-white/10">
               <h3 className="text-xl font-bold text-white mb-6">Envíanos un mensaje</h3>
-              <form className="space-y-5">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-400 mb-2">Nombre</label>
-                    <input
-                      type="text"
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-gray-500 focus:outline-none focus:border-[var(--color-brand-orange)] focus:ring-1 focus:ring-[var(--color-brand-orange)] transition-all"
-                      placeholder="Tu nombre"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-400 mb-2">Email</label>
-                    <input
-                      type="email"
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-gray-500 focus:outline-none focus:border-[var(--color-brand-orange)] focus:ring-1 focus:ring-[var(--color-brand-orange)] transition-all"
-                      placeholder="tu@email.com"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-400 mb-2">Teléfono</label>
-                  <input
-                    type="tel"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-gray-500 focus:outline-none focus:border-[var(--color-brand-orange)] focus:ring-1 focus:ring-[var(--color-brand-orange)] transition-all"
-                    placeholder="+57 300 000 0000"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-400 mb-2">Mensaje</label>
-                  <textarea
-                    rows={4}
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-gray-500 focus:outline-none focus:border-[var(--color-brand-orange)] focus:ring-1 focus:ring-[var(--color-brand-orange)] transition-all resize-none"
-                    placeholder="Cuéntanos sobre tu proyecto..."
-                  />
-                </div>
-                <button
-                  type="button"
-                  className="bg-[var(--color-brand-orange)] hover:bg-[var(--color-brand-orange-hover)] text-white px-8 py-4 rounded-xl font-bold transition-all duration-300 w-full flex items-center justify-center gap-2 hover:-translate-y-0.5 shadow-lg shadow-[var(--color-brand-orange)]/20"
-                >
-                  Enviar Mensaje
-                  <Send size={18} />
-                </button>
-              </form>
+              <ContactForm variant="dark" />
             </div>
           </div>
         </div>

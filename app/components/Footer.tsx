@@ -14,17 +14,17 @@ export function Footer() {
   return (
     <footer className="bg-black text-gray-400 py-16 border-t border-gray-900">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
             <Image
               src="/logoletra.svg"
-              alt="CMP SAS Corrosion y Proof Coating - Sandblasting y recubrimientos industriales en Cartagena"
+              alt="CMP SAS Corrosion y Proof Coating - Sandblasting y recubrimientos industriales en Colombia"
               width={180}
               height={40}
               className="h-10 w-auto mb-4"
             />
             <p className="text-sm mb-4">
-              Empresa especializada en sandblasting, recubrimientos industriales y protección anticorrosiva en Cartagena, Colombia.
+              Empresa especializada en sandblasting, recubrimientos industriales y protección anticorrosiva en Colombia. Certificaciones NACE/SSPC.
             </p>
             <p className="text-sm">&copy; {new Date().getFullYear()} CMP SAS</p>
           </div>
@@ -39,9 +39,38 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-bold mb-4">Sandblasting</h4>
+            <ul className="space-y-2">
               <li>
                 <Link href="/sandblasting-cartagena" className="text-sm text-[var(--color-brand-orange)] hover:text-[var(--color-brand-orange-hover)] font-medium transition-colors">
                   Sandblasting en Cartagena
+                </Link>
+              </li>
+              <li>
+                <Link href="/sandblasting-colombia" className="text-sm hover:text-[var(--color-brand-orange)] transition-colors">
+                  Sandblasting en Colombia
+                </Link>
+              </li>
+              <li>
+                <Link href="/sandblasting-costa-caribe" className="text-sm hover:text-[var(--color-brand-orange)] transition-colors">
+                  Sandblasting Costa Caribe
+                </Link>
+              </li>
+            </ul>
+            <h4 className="text-white font-bold mb-4 mt-6">Empresa</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/sobre-nosotros" className="text-sm hover:text-[var(--color-brand-orange)] transition-colors">
+                  Sobre Nosotros
+                </Link>
+              </li>
+              <li>
+                <Link href="/contacto" className="text-sm hover:text-[var(--color-brand-orange)] transition-colors">
+                  Contacto
                 </Link>
               </li>
             </ul>

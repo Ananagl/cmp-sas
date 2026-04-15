@@ -7,7 +7,7 @@ import { CTASection } from "../../components/CTASection";
 import { JsonLd } from "../../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Sandblasting y Ecoblasting Profesional en Cartagena",
+  title: "Sandblasting y Ecoblasting Profesional en Colombia",
   description:
     "Servicios de sandblasting convencional, ecoblasting (soda blasting) e hidroblasting en Cartagena. Preparación de superficies según normas SSPC/NACE. Cotización gratuita.",
   alternates: { canonical: "/servicios/sandblasting-ecoblasting" },

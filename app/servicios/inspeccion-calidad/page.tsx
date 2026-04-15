@@ -7,7 +7,7 @@ import { CTASection } from "../../components/CTASection";
 import { JsonLd } from "../../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Inspección y Control de Calidad - Medición de Espesores",
+  title: "Inspección y Control de Calidad de Recubrimientos",
   description:
     "Servicios de inspección y calidad: medición de espesores, pruebas de adherencia, verificación de estándares SSPC/NACE en Cartagena. CMP SAS.",
   alternates: { canonical: "/servicios/inspeccion-calidad" },

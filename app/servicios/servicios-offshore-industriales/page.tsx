@@ -7,7 +7,7 @@ import { CTASection } from "../../components/CTASection";
 import { JsonLd } from "../../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Servicios Offshore e Industriales en Cartagena",
+  title: "Servicios Offshore e Industriales en Colombia",
   description:
     "Mantenimiento de plataformas offshore, protección catódica y soluciones metalmecánicas para el sector naval e industrial en Cartagena. CMP SAS.",
   alternates: { canonical: "/servicios/servicios-offshore-industriales" },

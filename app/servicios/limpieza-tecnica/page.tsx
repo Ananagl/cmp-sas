@@ -7,7 +7,7 @@ import { CTASection } from "../../components/CTASection";
 import { JsonLd } from "../../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Limpieza Técnica Industrial en Cartagena",
+  title: "Limpieza Técnica Industrial",
   description:
     "Servicios de limpieza técnica industrial en Cartagena: lavado a presión, limpieza química, lavado de tanques y cajas de mar. Resultados garantizados por CMP SAS.",
   alternates: { canonical: "/servicios/limpieza-tecnica" },

@@ -7,7 +7,7 @@ import { CTASection } from "../../components/CTASection";
 import { JsonLd } from "../../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Alquiler de Equipos y Personal Especializado en Cartagena",
+  title: "Alquiler de Equipos y Personal Especializado",
   description:
     "Alquiler de equipos de sandblasting, andamios y suministro de personal certificado para proyectos industriales en Cartagena y Colombia. CMP SAS.",
   alternates: { canonical: "/servicios/personal-equipos" },

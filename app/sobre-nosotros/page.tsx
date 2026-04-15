@@ -18,7 +18,7 @@ import { CTASection } from "../components/CTASection";
 import { JsonLd } from "../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Sobre Nosotros - CMP SAS Cartagena",
+  title: "Sobre Nosotros - Sandblasting Colombia",
   description:
     "Conoce a CMP SAS: empresa de sandblasting y recubrimientos industriales en Cartagena desde 2015. Certificaciones NACE/SSPC. +30,000 m² tratados en Colombia.",
   alternates: { canonical: "/sobre-nosotros" },

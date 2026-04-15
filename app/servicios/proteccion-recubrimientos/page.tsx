@@ -7,7 +7,7 @@ import { CTASection } from "../../components/CTASection";
 import { JsonLd } from "../../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Recubrimientos Industriales y Pintura Anticorrosiva en Cartagena",
+  title: "Recubrimientos Industriales y Pintura Anticorrosiva",
   description:
     "Aplicación de recubrimientos industriales, pintura anticorrosiva, pisos epóxicos y galvanizado en frío en Cartagena. Cumplimos normas NACE/SSPC. CMP SAS.",
   alternates: { canonical: "/servicios/proteccion-recubrimientos" },

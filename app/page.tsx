@@ -17,7 +17,7 @@ import { JsonLd } from "./components/JsonLd";
 export const metadata: Metadata = {
   title: "Sandblasting y Recubrimientos Industriales en Colombia",
   description:
-    "CMP SAS: empresa líder en sandblasting, ecoblasting y recubrimientos industriales en Colombia. Cartagena, Costa Caribe y todo el país. NACE/SSPC. +30,000 m² tratados.",
+    "CMP SAS: empresa líder en sandblasting, ecoblasting y recubrimientos industriales en Colombia. Cobertura nacional. NACE/SSPC. +30,000 m² tratados.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "CMP SAS - Sandblasting y Recubrimientos Industriales en Colombia",
@@ -37,7 +37,7 @@ const localBusinessSchema = {
   image:
     "https://www.cmpcoating.com.co/images/hero-sandblasting-nocturno-buque-cartagena.webp",
   description:
-    "Empresa especializada en sandblasting, recubrimientos industriales y protección anticorrosiva en Colombia. Sede en Cartagena con cobertura en la Costa Caribe y todo el país.",
+    "Empresa especializada en sandblasting, recubrimientos industriales y protección anticorrosiva en Colombia. Cobertura en la Costa Caribe y todo el país.",
   telephone: "+573137804820",
   address: {
     "@type": "PostalAddress",
@@ -61,7 +61,6 @@ const localBusinessSchema = {
   knowsAbout: [
     "Sandblasting",
     "Sandblasting Colombia",
-    "Sandblasting Cartagena",
     "Sandblasting Costa Caribe",
     "Recubrimientos industriales",
     "Protección anticorrosiva",
@@ -197,7 +196,7 @@ export default function Home() {
             <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl">
               Protegemos tu infraestructura con soluciones avanzadas de{" "}
               <strong>sandblasting</strong>, preparación de superficies y recubrimientos anticorrosivos
-              en <strong>Cartagena</strong>, la <strong>Costa Caribe</strong> y toda <strong>Colombia</strong>.
+              en toda <strong>Colombia</strong>. Costa Caribe y cobertura nacional.
               Certificaciones NACE/SSPC.
             </p>
 
@@ -245,8 +244,8 @@ export default function Home() {
               Conoce nuestros servicios
             </h2>
             <p className="text-lg text-gray-600">
-              Ofrecemos soluciones integrales de sandblasting, recubrimientos y protección anticorrosiva en Cartagena,
-              la Costa Caribe y toda Colombia, con la calidad y eficiencia que tu proyecto requiere.
+              Ofrecemos soluciones integrales de sandblasting, recubrimientos y protección anticorrosiva
+              en toda Colombia, con la calidad y eficiencia que tu proyecto requiere.
             </p>
           </div>
 
@@ -453,8 +452,8 @@ export default function Home() {
               Sandblasting en toda Colombia
             </h2>
             <p className="text-lg text-gray-600">
-              Desde nuestra base en Cartagena de Indias, ofrecemos servicios de sandblasting y recubrimientos
-              industriales en la Costa Caribe y todo el territorio colombiano.
+              Ofrecemos servicios de sandblasting y recubrimientos industriales
+              en la Costa Caribe y todo el territorio colombiano.
             </p>
           </div>
 

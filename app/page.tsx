@@ -306,6 +306,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Project Gallery */}
+      <section className="py-20 bg-[var(--color-brand-gray)]">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-12 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+              Nuestros Proyectos
+            </h2>
+            <p className="text-lg text-gray-600">
+              Resultados reales de sandblasting, recubrimientos y protección anticorrosiva en proyectos
+              industriales, navales y offshore en Colombia.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { src: "/images/sandblasting-granallado-casco-industrial.webp", alt: "Sandblasting industrial en casco de buque" },
+              { src: "/images/recubrimiento-pintura-barco-rojo-acabado.webp", alt: "Acabado de pintura anticorrosiva en embarcación" },
+              { src: "/images/naval-remolcador-mantenimiento-dique.webp", alt: "Mantenimiento de remolcador en dique seco" },
+              { src: "/images/offshore-estructura-maritima-trabajo.webp", alt: "Sandblasting en estructura marítima offshore" },
+              { src: "/images/resultado-final-casco-terminado.webp", alt: "Resultado final de sandblasting y pintura en casco" },
+              { src: "/images/equipo-operario-manlift-astillero.webp", alt: "Operario en manlift durante sandblasting en astillero" },
+              { src: "/images/recubrimiento-proteccion-casco-naval.webp", alt: "Recubrimiento anticorrosivo en casco naval" },
+              { src: "/images/hero-sandblasting-casco-buque-nocturno.webp", alt: "Sandblasting nocturno en casco de buque" },
+            ].map((img) => (
+              <div key={img.src} className="relative h-48 md:h-56 rounded-2xl overflow-hidden group">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  quality={75}
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              href="/sandblasting-cartagena#gallery"
+              className="inline-flex items-center text-[var(--color-brand-orange)] hover:text-[var(--color-brand-orange-hover)] font-bold text-lg transition-colors"
+            >
+              Ver más proyectos y resultados antes/después
+              <ChevronRight size={20} className="ml-1" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Contact CTA Section */}
       <CTASection />
 

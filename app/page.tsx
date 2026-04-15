@@ -305,6 +305,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact CTA Section */}
+      <CTASection />
+
       {/* About Us Section */}
       <section id="nosotros" className="py-24 bg-[var(--color-brand-gray)]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -498,8 +501,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact CTA Section */}
-      <CTASection />
     </>
   );
 }

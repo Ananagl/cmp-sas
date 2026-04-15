@@ -275,261 +275,6 @@ export default function SandblastingCartagena() {
         </div>
       </section>
 
-      {/* Tipos de Sandblasting */}
-      <section className="py-20 bg-[var(--color-brand-gray)]">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-center mb-16 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
-              Tipos de Sandblasting que Ofrecemos en Cartagena
-            </h2>
-            <p className="text-lg text-gray-600">
-              Contamos con diferentes técnicas de preparación de superficies para adaptarnos a las necesidades
-              específicas de cada proyecto industrial, naval u offshore en Cartagena.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="w-14 h-14 rounded-full bg-[var(--color-brand-orange)]/10 flex items-center justify-center mb-6">
-                <Flame size={28} className="text-[var(--color-brand-orange)]" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Sandblasting Convencional</h3>
-              <p className="text-gray-600 mb-4">
-                El método más utilizado de chorreado abrasivo en Cartagena. Proyectamos granalla de acero o abrasivos minerales
-                a alta presión para alcanzar perfiles de anclaje de 2 a 4 mils, ideales para sistemas de recubrimiento
-                de alto espesor en ambientes marinos y corrosivos.
-              </p>
-              <p className="text-gray-600">
-                Aplicamos grados de limpieza desde SSPC-SP6 (Commercial Blast) hasta SSPC-SP5 (White Metal Blast)
-                según los requerimientos del proyecto y las especificaciones del fabricante de pintura.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="w-14 h-14 rounded-full bg-[var(--color-brand-orange)]/10 flex items-center justify-center mb-6">
-                <Shield size={28} className="text-[var(--color-brand-orange)]" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Ecoblasting (Soda Blasting)</h3>
-              <p className="text-gray-600 mb-4">
-                Técnica de limpieza abrasiva ecológica que utiliza bicarbonato de sodio como medio de proyección.
-                No genera chispa, es soluble en agua y no daña superficies delicadas como aluminio, fibra de vidrio
-                o sustratos que requieren un tratamiento menos agresivo.
-              </p>
-              <p className="text-gray-600">
-                Ideal para proyectos en Cartagena donde se requiere cumplimiento de normativas ambientales
-                estrictas o donde no se desea un perfil de anclaje profundo.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="w-14 h-14 rounded-full bg-[var(--color-brand-orange)]/10 flex items-center justify-center mb-6">
-                <Wrench size={28} className="text-[var(--color-brand-orange)]" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Hidroblasting</h3>
-              <p className="text-gray-600 mb-4">
-                Limpieza de superficies con agua a ultra alta presión (hasta 40,000 PSI). Elimina recubrimientos
-                deteriorados, óxido y contaminantes sin generar polvo ni residuos de abrasivo. Excelente para
-                preparación de superficies en tanques, tuberías y estructuras en zonas confinadas.
-              </p>
-              <p className="text-gray-600">
-                Este método es especialmente valorado en el sector naval y petroquímico de Cartagena por su
-                eficiencia y bajo impacto ambiental.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-12 text-center">
-            <Link
-              href="/servicios/sandblasting-ecoblasting"
-              className="inline-flex items-center text-[var(--color-brand-orange)] hover:text-[var(--color-brand-orange-hover)] font-bold text-lg transition-colors"
-            >
-              Ver más detalles de nuestro servicio de sandblasting
-              <ChevronRight size={20} className="ml-1" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Normas y Estándares */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-16 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
-              Normas y Estándares que Cumplimos
-            </h2>
-            <p className="text-lg text-gray-600">
-              Todo nuestro trabajo de sandblasting en Cartagena se ejecuta bajo estricto cumplimiento de normas
-              internacionales SSPC y NACE, verificado con instrumentos de medición calibrados.
-            </p>
-          </div>
-
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
-              <thead>
-                <tr className="bg-[var(--color-brand-dark)] text-white">
-                  <th className="px-6 py-4 text-left font-bold">Norma</th>
-                  <th className="px-6 py-4 text-left font-bold">Descripción</th>
-                  <th className="px-6 py-4 text-left font-bold">Aplicación Típica</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  {
-                    norma: "SSPC-SP5 / NACE No. 1",
-                    desc: "White Metal Blast Cleaning (Limpieza a metal blanco)",
-                    app: "Ambientes extremos, inmersión en agua de mar, tanques de almacenamiento",
-                  },
-                  {
-                    norma: "SSPC-SP10 / NACE No. 2",
-                    desc: "Near-White Blast Cleaning (Limpieza casi a metal blanco)",
-                    app: "Ambientes marinos agresivos, plataformas offshore, cascos de buques",
-                  },
-                  {
-                    norma: "SSPC-SP6 / NACE No. 3",
-                    desc: "Commercial Blast Cleaning (Limpieza comercial)",
-                    app: "Ambientes industriales moderados, estructuras interiores",
-                  },
-                  {
-                    norma: "ISO 8501-1 Sa 2½",
-                    desc: "Equivalente a SSPC-SP10 en el estándar europeo/internacional",
-                    app: "Proyectos con especificaciones bajo normativa ISO",
-                  },
-                ].map((row) => (
-                  <tr key={row.norma} className="border-b border-gray-100 hover:bg-gray-50">
-                    <td className="px-6 py-4 font-bold text-[var(--color-brand-orange)]">{row.norma}</td>
-                    <td className="px-6 py-4 text-gray-700">{row.desc}</td>
-                    <td className="px-6 py-4 text-gray-600">{row.app}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Sectores que Atendemos */}
-      <section className="py-20 bg-[var(--color-brand-gray)]">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-center mb-16 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
-              Sectores que Atendemos en Cartagena
-            </h2>
-            <p className="text-lg text-gray-600">
-              Nuestros servicios de sandblasting y protección anticorrosiva en Cartagena atienden a los principales
-              sectores productivos de la región Caribe colombiana.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Anchor,
-                title: "Naval y Marítimo",
-                description: "Preparación de cascos, cubiertas, bodegas y sentinas de embarcaciones en los astilleros y diques de Cartagena. Cumplimos con las exigencias de clasificadoras internacionales.",
-              },
-              {
-                icon: Factory,
-                title: "Petroquímico y Refinería",
-                description: "Sandblasting y recubrimiento de tanques de almacenamiento, tuberías, estructuras metálicas y equipos de proceso en la zona industrial de Mamonal.",
-              },
-              {
-                icon: Building2,
-                title: "Industrial y Manufactura",
-                description: "Preparación de superficies para plantas de producción, estructuras de acero, naves industriales y equipos de procesamiento en Cartagena y el Caribe colombiano.",
-              },
-              {
-                icon: HardHat,
-                title: "Offshore y Plataformas",
-                description: "Mantenimiento anticorrosivo de plataformas petroleras, jack-ups y equipos offshore con personal certificado y protocolos HSE.",
-              },
-              {
-                icon: Building2,
-                title: "Infraestructura Civil",
-                description: "Sandblasting de puentes, pasarelas, torres de comunicación, estructuras de acero y cualquier proyecto de ingeniería civil que requiera protección anticorrosiva.",
-              },
-              {
-                icon: Shield,
-                title: "Energía",
-                description: "Preparación de superficies para torres eólicas, subestaciones eléctricas, paneles solares y toda la infraestructura del sector energético.",
-              },
-            ].map((sector) => (
-              <div key={sector.title} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-                <div className="w-12 h-12 rounded-full bg-[var(--color-brand-orange)]/10 flex items-center justify-center mb-4">
-                  <sector.icon size={24} className="text-[var(--color-brand-orange)]" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{sector.title}</h3>
-                <p className="text-gray-600">{sector.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Nuestro Proceso */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-16 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
-              Nuestro Proceso de Trabajo
-            </h2>
-            <p className="text-lg text-gray-600">
-              Cada proyecto de sandblasting en Cartagena sigue un proceso riguroso para garantizar resultados
-              que cumplen con las normas internacionales y las expectativas de nuestros clientes.
-            </p>
-          </div>
-
-          <div className="space-y-8">
-            {[
-              {
-                step: "01",
-                title: "Diagnóstico e Inspección Inicial",
-                description: "Evaluamos el grado de corrosión existente según ISO 8501 (grados A, B, C, D), medimos espesores residuales del metal base y documentamos las condiciones actuales de la superficie.",
-              },
-              {
-                step: "02",
-                title: "Selección de Abrasivo y Perfil de Anclaje",
-                description: "Según las especificaciones del proyecto y el sistema de recubrimiento a aplicar, seleccionamos el abrasivo óptimo (granalla de acero, arena mineral, bicarbonato) y definimos el perfil de anclaje objetivo.",
-              },
-              {
-                step: "03",
-                title: "Preparación de Superficie según Norma",
-                description: "Ejecutamos el sandblasting alcanzando el grado de limpieza especificado (SSPC-SP5, SP6, SP10 o equivalente ISO). Controlamos la presión, la distancia de proyección y el ángulo de impacto para resultados uniformes.",
-              },
-              {
-                step: "04",
-                title: "Verificación con Instrumentos",
-                description: "Medimos el perfil de anclaje con replica tape, verificamos el punto de rocío con medidor ambiental, y confirmamos el grado de limpieza visual antes de proceder con el recubrimiento.",
-              },
-              {
-                step: "05",
-                title: "Aplicación de Recubrimiento",
-                description: "Coordinamos la aplicación del sistema de pintura dentro de las ventanas de tiempo normativas, verificando espesor de película húmeda y seca (DFT) con medidores calibrados.",
-              },
-            ].map((item) => (
-              <div key={item.step} className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[var(--color-brand-orange)] flex items-center justify-center text-white font-extrabold text-xl">
-                  {item.step}
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-600 text-lg">{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <Link
-              href="/servicios/proteccion-recubrimientos"
-              className="inline-flex items-center text-[var(--color-brand-orange)] hover:text-[var(--color-brand-orange-hover)] font-bold text-lg transition-colors"
-            >
-              Conoce nuestros servicios de recubrimientos industriales
-              <ChevronRight size={20} className="ml-1" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Gallery / Before-After */}
       <section className="py-20 bg-[var(--color-brand-gray)]">
         <div className="container mx-auto px-4 max-w-7xl">
@@ -607,6 +352,264 @@ export default function SandblastingCartagena() {
                 <Image src={img.src} alt={img.alt} fill sizes="(max-width: 768px) 50vw, 25vw" quality={75} className="object-cover hover:scale-105 transition-transform duration-300" />
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA Section */}
+      <CTASection />
+
+      {/* Tipos de Sandblasting */}
+      <section className="py-20 bg-[var(--color-brand-gray)]">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-16 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+              Tipos de Sandblasting que Ofrecemos en Cartagena
+            </h2>
+            <p className="text-lg text-gray-600">
+              Contamos con diferentes técnicas de preparación de superficies para adaptarnos a las necesidades
+              específicas de cada proyecto industrial, naval u offshore en Cartagena.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="w-14 h-14 rounded-full bg-[var(--color-brand-orange)]/10 flex items-center justify-center mb-6">
+                <Flame size={28} className="text-[var(--color-brand-orange)]" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Sandblasting Convencional</h3>
+              <p className="text-gray-600 mb-4">
+                El método más utilizado de chorreado abrasivo en Cartagena. Proyectamos granalla de acero o abrasivos minerales
+                a alta presión para alcanzar perfiles de anclaje de 2 a 4 mils, ideales para sistemas de recubrimiento
+                de alto espesor en ambientes marinos y corrosivos.
+              </p>
+              <p className="text-gray-600">
+                Aplicamos grados de limpieza desde SSPC-SP6 (Commercial Blast) hasta SSPC-SP5 (White Metal Blast)
+                según los requerimientos del proyecto y las especificaciones del fabricante de pintura.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="w-14 h-14 rounded-full bg-[var(--color-brand-orange)]/10 flex items-center justify-center mb-6">
+                <Shield size={28} className="text-[var(--color-brand-orange)]" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Ecoblasting (Soda Blasting)</h3>
+              <p className="text-gray-600 mb-4">
+                Técnica de limpieza abrasiva ecológica que utiliza bicarbonato de sodio como medio de proyección.
+                No genera chispa, es soluble en agua y no daña superficies delicadas como aluminio, fibra de vidrio
+                o sustratos que requieren un tratamiento menos agresivo.
+              </p>
+              <p className="text-gray-600">
+                Ideal para proyectos en Cartagena donde se requiere cumplimiento de normativas ambientales
+                estrictas o donde no se desea un perfil de anclaje profundo.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow border border-gray-100">
+              <div className="w-14 h-14 rounded-full bg-[var(--color-brand-orange)]/10 flex items-center justify-center mb-6">
+                <Wrench size={28} className="text-[var(--color-brand-orange)]" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Hidroblasting</h3>
+              <p className="text-gray-600 mb-4">
+                Limpieza de superficies con agua a ultra alta presión (hasta 40,000 PSI). Elimina recubrimientos
+                deteriorados, óxido y contaminantes sin generar polvo ni residuos de abrasivo. Excelente para
+                preparación de superficies en tanques, tuberías y estructuras en zonas confinadas.
+              </p>
+              <p className="text-gray-600">
+                Este método es especialmente valorado en el sector naval y petroquímico de Cartagena por su
+                eficiencia y bajo impacto ambiental.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              href="/servicios/sandblasting-ecoblasting"
+              className="inline-flex items-center text-[var(--color-brand-orange)] hover:text-[var(--color-brand-orange-hover)] font-bold text-lg transition-colors"
+            >
+              Ver más detalles de nuestro servicio de sandblasting
+              <ChevronRight size={20} className="ml-1" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Sectores que Atendemos */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-16 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+              Sectores que Atendemos en Cartagena
+            </h2>
+            <p className="text-lg text-gray-600">
+              Nuestros servicios de sandblasting y protección anticorrosiva en Cartagena atienden a los principales
+              sectores productivos de la región Caribe colombiana.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                icon: Anchor,
+                title: "Naval y Marítimo",
+                description: "Preparación de cascos, cubiertas, bodegas y sentinas de embarcaciones en los astilleros y diques de Cartagena. Cumplimos con las exigencias de clasificadoras internacionales.",
+              },
+              {
+                icon: Factory,
+                title: "Petroquímico y Refinería",
+                description: "Sandblasting y recubrimiento de tanques de almacenamiento, tuberías, estructuras metálicas y equipos de proceso en la zona industrial de Mamonal.",
+              },
+              {
+                icon: Building2,
+                title: "Industrial y Manufactura",
+                description: "Preparación de superficies para plantas de producción, estructuras de acero, naves industriales y equipos de procesamiento en Cartagena y el Caribe colombiano.",
+              },
+              {
+                icon: HardHat,
+                title: "Offshore y Plataformas",
+                description: "Mantenimiento anticorrosivo de plataformas petroleras, jack-ups y equipos offshore con personal certificado y protocolos HSE.",
+              },
+              {
+                icon: Building2,
+                title: "Infraestructura Civil",
+                description: "Sandblasting de puentes, pasarelas, torres de comunicación, estructuras de acero y cualquier proyecto de ingeniería civil que requiera protección anticorrosiva.",
+              },
+              {
+                icon: Shield,
+                title: "Energía",
+                description: "Preparación de superficies para torres eólicas, subestaciones eléctricas, paneles solares y toda la infraestructura del sector energético.",
+              },
+            ].map((sector) => (
+              <div key={sector.title} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div className="w-12 h-12 rounded-full bg-[var(--color-brand-orange)]/10 flex items-center justify-center mb-4">
+                  <sector.icon size={24} className="text-[var(--color-brand-orange)]" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{sector.title}</h3>
+                <p className="text-gray-600">{sector.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Nuestro Proceso */}
+      <section className="py-20 bg-[var(--color-brand-gray)]">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-16 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+              Nuestro Proceso de Trabajo
+            </h2>
+            <p className="text-lg text-gray-600">
+              Cada proyecto de sandblasting en Cartagena sigue un proceso riguroso para garantizar resultados
+              que cumplen con las normas internacionales y las expectativas de nuestros clientes.
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            {[
+              {
+                step: "01",
+                title: "Diagnóstico e Inspección Inicial",
+                description: "Evaluamos el grado de corrosión existente según ISO 8501 (grados A, B, C, D), medimos espesores residuales del metal base y documentamos las condiciones actuales de la superficie.",
+              },
+              {
+                step: "02",
+                title: "Selección de Abrasivo y Perfil de Anclaje",
+                description: "Según las especificaciones del proyecto y el sistema de recubrimiento a aplicar, seleccionamos el abrasivo óptimo (granalla de acero, arena mineral, bicarbonato) y definimos el perfil de anclaje objetivo.",
+              },
+              {
+                step: "03",
+                title: "Preparación de Superficie según Norma",
+                description: "Ejecutamos el sandblasting alcanzando el grado de limpieza especificado (SSPC-SP5, SP6, SP10 o equivalente ISO). Controlamos la presión, la distancia de proyección y el ángulo de impacto para resultados uniformes.",
+              },
+              {
+                step: "04",
+                title: "Verificación con Instrumentos",
+                description: "Medimos el perfil de anclaje con replica tape, verificamos el punto de rocío con medidor ambiental, y confirmamos el grado de limpieza visual antes de proceder con el recubrimiento.",
+              },
+              {
+                step: "05",
+                title: "Aplicación de Recubrimiento",
+                description: "Coordinamos la aplicación del sistema de pintura dentro de las ventanas de tiempo normativas, verificando espesor de película húmeda y seca (DFT) con medidores calibrados.",
+              },
+            ].map((item) => (
+              <div key={item.step} className="flex gap-6 items-start">
+                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[var(--color-brand-orange)] flex items-center justify-center text-white font-extrabold text-xl">
+                  {item.step}
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                  <p className="text-gray-600 text-lg">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              href="/servicios/proteccion-recubrimientos"
+              className="inline-flex items-center text-[var(--color-brand-orange)] hover:text-[var(--color-brand-orange-hover)] font-bold text-lg transition-colors"
+            >
+              Conoce nuestros servicios de recubrimientos industriales
+              <ChevronRight size={20} className="ml-1" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Normas y Estándares */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-16 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+              Normas y Estándares que Cumplimos
+            </h2>
+            <p className="text-lg text-gray-600">
+              Todo nuestro trabajo de sandblasting en Cartagena se ejecuta bajo estricto cumplimiento de normas
+              internacionales SSPC y NACE, verificado con instrumentos de medición calibrados.
+            </p>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+              <thead>
+                <tr className="bg-[var(--color-brand-dark)] text-white">
+                  <th className="px-6 py-4 text-left font-bold">Norma</th>
+                  <th className="px-6 py-4 text-left font-bold">Descripción</th>
+                  <th className="px-6 py-4 text-left font-bold">Aplicación Típica</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  {
+                    norma: "SSPC-SP5 / NACE No. 1",
+                    desc: "White Metal Blast Cleaning (Limpieza a metal blanco)",
+                    app: "Ambientes extremos, inmersión en agua de mar, tanques de almacenamiento",
+                  },
+                  {
+                    norma: "SSPC-SP10 / NACE No. 2",
+                    desc: "Near-White Blast Cleaning (Limpieza casi a metal blanco)",
+                    app: "Ambientes marinos agresivos, plataformas offshore, cascos de buques",
+                  },
+                  {
+                    norma: "SSPC-SP6 / NACE No. 3",
+                    desc: "Commercial Blast Cleaning (Limpieza comercial)",
+                    app: "Ambientes industriales moderados, estructuras interiores",
+                  },
+                  {
+                    norma: "ISO 8501-1 Sa 2½",
+                    desc: "Equivalente a SSPC-SP10 en el estándar europeo/internacional",
+                    app: "Proyectos con especificaciones bajo normativa ISO",
+                  },
+                ].map((row) => (
+                  <tr key={row.norma} className="border-b border-gray-100 hover:bg-gray-50">
+                    <td className="px-6 py-4 font-bold text-[var(--color-brand-orange)]">{row.norma}</td>
+                    <td className="px-6 py-4 text-gray-700">{row.desc}</td>
+                    <td className="px-6 py-4 text-gray-600">{row.app}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
@@ -696,8 +699,6 @@ export default function SandblastingCartagena() {
         </div>
       </section>
 
-      {/* Contact CTA Section */}
-      <CTASection />
     </>
   );
 }

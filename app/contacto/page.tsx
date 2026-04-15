@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "../components/Breadcrumbs";
 import { JsonLd } from "../components/JsonLd";
-import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Phone, MapPin, Clock, MessageCircle, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contacto - Cotización de Sandblasting",
@@ -27,6 +27,7 @@ const contactPageSchema = {
     "@id": "https://www.cmpcoating.com.co/#organization",
     name: "CMP SAS Corrosion y Proof Coating",
     telephone: "+573137804820",
+    email: "ventasservicio@cmpcoating.com.co",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Cartagena de Indias",
@@ -69,7 +70,7 @@ export default function ContactoPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-[var(--color-brand-orange)]/10 flex items-center justify-center shrink-0">
@@ -79,6 +80,20 @@ export default function ContactoPage() {
                     <h3 className="font-bold text-gray-900 mb-1">Teléfono</h3>
                     <a href="tel:+573137804820" className="text-gray-600 hover:text-[var(--color-brand-orange)] transition-colors">
                       +57 313 780 4820
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-[var(--color-brand-orange)]/10 flex items-center justify-center shrink-0">
+                    <Mail size={22} className="text-[var(--color-brand-orange)]" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Email</h3>
+                    <a href="mailto:ventasservicio@cmpcoating.com.co" className="text-gray-600 hover:text-[var(--color-brand-orange)] transition-colors text-sm">
+                      ventasservicio@cmpcoating.com.co
                     </a>
                   </div>
                 </div>

@@ -81,6 +81,7 @@ const localBusinessSchema = {
   image: "https://www.cmpcoating.com.co/images/hero-pintura-remolcador-astillero-cartagena.webp",
   description: "Empresa especializada en sandblasting y recubrimientos industriales en Cartagena, Colombia. Certificaciones NACE/SSPC.",
   telephone: "+573137804820",
+  email: "ventasservicio@cmpcoating.com.co",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Cartagena de Indias",

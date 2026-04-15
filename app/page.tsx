@@ -39,6 +39,7 @@ const localBusinessSchema = {
   description:
     "Empresa especializada en sandblasting, recubrimientos industriales y protección anticorrosiva en Colombia. Cobertura en la Costa Caribe y todo el país.",
   telephone: "+573137804820",
+  email: "ventasservicio@cmpcoating.com.co",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Cartagena de Indias",

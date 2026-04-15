@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Mail } from "lucide-react";
 
 export function CTASection() {
   return (
@@ -38,6 +38,18 @@ export function CTASection() {
               <h3 className="text-white font-semibold mb-1">Teléfono</h3>
               <a href="tel:+573137804820" className="text-gray-400 hover:text-white transition-colors">
                 +57 313 780 4820
+              </a>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 rounded-xl bg-[var(--color-brand-orange)]/10 flex items-center justify-center shrink-0">
+              <Mail size={22} className="text-[var(--color-brand-orange)]" />
+            </div>
+            <div>
+              <h3 className="text-white font-semibold mb-1">Email</h3>
+              <a href="mailto:ventasservicio@cmpcoating.com.co" className="text-gray-400 hover:text-white transition-colors">
+                ventasservicio@cmpcoating.com.co
               </a>
             </div>
           </div>

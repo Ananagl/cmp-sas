@@ -84,6 +84,11 @@ export function Footer() {
                   Tel: +57 313 780 4820
                 </a>
               </li>
+              <li>
+                <a href="mailto:ventasservicio@cmpcoating.com.co" className="hover:text-[var(--color-brand-orange)] transition-colors">
+                  ventasservicio@cmpcoating.com.co
+                </a>
+              </li>
               <li className="pt-2">Cartagena de Indias, Colombia</li>
             </ul>
             <div className="mt-6">

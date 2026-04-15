@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     url: "/sobre-nosotros",
     images: [
       {
-        url: "/images/equipo-profesional-cmp-sas-cartagena.webp",
+        url: "/images/equipo-cuadrilla-trabajo-campo.webp",
         width: 1200,
         height: 630,
         alt: "Equipo profesional de CMP SAS en Cartagena",
@@ -46,7 +46,7 @@ const organizationSchema = {
   alternateName: "CMP SAS",
   url: "https://www.cmpcoating.com.co",
   logo: "https://www.cmpcoating.com.co/logo.svg",
-  image: "https://www.cmpcoating.com.co/images/equipo-profesional-cmp-sas-cartagena.webp",
+  image: "https://www.cmpcoating.com.co/images/equipo-cuadrilla-trabajo-campo.webp",
   description: "Empresa especializada en sandblasting, recubrimientos industriales y protección anticorrosiva en Colombia desde 2015.",
   foundingDate: "2015",
   foundingLocation: {
@@ -54,7 +54,6 @@ const organizationSchema = {
     name: "Cartagena de Indias, Colombia",
   },
   telephone: "+573137804820",
-  email: "ventasservicios@cmpcoating.com.co",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Cartagena de Indias",
@@ -86,7 +85,7 @@ export default function SobreNosotrosPage() {
       <section className="relative py-24 md:py-32 bg-[var(--color-brand-dark)]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/equipo-profesional-cmp-sas-cartagena.webp"
+            src="/images/hero-remolcador-saam-tajin-dique-cartagena.webp"
             alt="Equipo profesional de CMP SAS - Sandblasting y recubrimientos en Colombia"
             fill
             priority
@@ -146,7 +145,7 @@ export default function SobreNosotrosPage() {
             <div className="relative">
               <div className="w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/trabajo-sandblasting-preparacion-superficies.webp"
+                  src="/images/sandblasting-limpieza-abrasiva-estructura.webp"
                   alt="Trabajo de sandblasting y preparación de superficies - CMP SAS"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -304,7 +303,7 @@ export default function SobreNosotrosPage() {
             <div className="relative">
               <div className="w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/equipo-profesional-cmp-sas-cartagena.webp"
+                  src="/images/equipo-personal-trabajo-industrial.webp"
                   alt="Equipo profesional de CMP SAS en Cartagena, Colombia"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

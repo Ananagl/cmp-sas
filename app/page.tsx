@@ -35,11 +35,10 @@ const localBusinessSchema = {
   alternateName: "CMP SAS",
   url: "https://www.cmpcoating.com.co",
   image:
-    "https://www.cmpcoating.com.co/images/sandblasting-industrial-cartagena-cmp-sas.webp",
+    "https://www.cmpcoating.com.co/images/hero-sandblasting-nocturno-buque-cartagena.webp",
   description:
     "Empresa especializada en sandblasting, recubrimientos industriales y protección anticorrosiva en Colombia. Sede en Cartagena con cobertura en la Costa Caribe y todo el país.",
   telephone: "+573137804820",
-  email: "ventasservicios@cmpcoating.com.co",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Cartagena de Indias",
@@ -176,8 +175,8 @@ export default function Home() {
       <section className="relative h-screen min-h-[600px] flex items-center">
         <div className="absolute inset-0 z-0 bg-gray-900">
           <Image
-            src="/images/sandblasting-industrial-cartagena-cmp-sas.webp"
-            alt="Sandblasting industrial en Cartagena - CMP SAS preparación de superficies certificada NACE"
+            src="/images/hero-sandblasting-nocturno-buque-cartagena.webp"
+            alt="Sandblasting industrial nocturno en buque - CMP SAS Cartagena preparación de superficies certificada NACE"
             fill
             priority
             sizes="100vw"
@@ -266,12 +265,24 @@ export default function Home() {
             Empresas que confían en nosotros
           </h2>
 
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale mb-20 max-w-5xl mx-auto">
-            <div className="w-32 h-16 bg-gray-200 rounded animate-pulse" />
-            <div className="w-32 h-16 bg-gray-200 rounded animate-pulse" />
-            <div className="w-32 h-16 bg-gray-200 rounded animate-pulse" />
-            <div className="w-32 h-16 bg-gray-200 rounded animate-pulse" />
-            <div className="w-32 h-16 bg-gray-200 rounded animate-pulse" />
+          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-14 mb-20 max-w-5xl mx-auto">
+            {[
+              { src: "/images/clientes/ferroalquimar.png", alt: "Ferroalquimar S.A.S - Astillero Naval Grúas" },
+              { src: "/images/clientes/intercol.png", alt: "Intercol" },
+              { src: "/images/clientes/astivik.svg", alt: "Astivik Shipyard", invert: true },
+              { src: "/images/clientes/seatech.png", alt: "Seatech International Inc." },
+              { src: "/images/clientes/cotecmar.png", alt: "Cotecmar" },
+              { src: "/images/clientes/saam-towage.png", alt: "SAAM Towage" },
+            ].map((logo) => (
+              <Image
+                key={logo.alt}
+                src={logo.src}
+                alt={logo.alt}
+                width={140}
+                height={60}
+                className={`object-contain h-12 md:h-14 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300${logo.invert ? " invert" : ""}`}
+              />
+            ))}
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -302,7 +313,7 @@ export default function Home() {
             <div className="order-2 md:order-1 relative">
               <div className="w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative">
                 <Image
-                  src="/images/equipo-profesional-cmp-sas-cartagena.webp"
+                  src="/images/equipo-cuadrilla-trabajo-campo.webp"
                   alt="Equipo profesional de CMP SAS en Cartagena - especialistas en sandblasting y recubrimientos"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -382,21 +393,21 @@ export default function Home() {
                 title: "Medidor de Espesor Digital",
                 description:
                   "Este equipo nos permite medir con precisión el espesor de recubrimientos aplicados, asegurando la protección óptima en superficies metálicas.",
-                image: "/images/trabajo-sandblasting-preparacion-superficies.webp",
+                image: "/images/inspeccion-calidad-medicion-espesores.webp",
                 alt: "Medidor de espesor digital para recubrimientos industriales - CMP SAS Cartagena",
               },
               {
                 title: "Compresor de Aire Atlas Copco",
                 description:
                   "Potencia y rendimiento superior para operaciones exigentes de sandblasting y aplicación de recubrimientos especializados.",
-                image: "/images/galeria-proyectos-sandblasting-recubrimientos.webp",
+                image: "/images/instalaciones-maquinaria-compresores.webp",
                 alt: "Compresor Atlas Copco para sandblasting industrial - CMP SAS Cartagena",
               },
               {
                 title: "Medidor Ambiental de Punto de Rocío",
                 description:
                   "Este instrumento nos ayuda a evaluar la humedad y la temperatura, asegurando que las condiciones sean ideales para el recubrimiento.",
-                image: "/images/trabajo-sandblasting-preparacion-superficies.webp",
+                image: "/images/inspeccion-verificacion-recubrimiento.webp",
                 alt: "Medidor ambiental de punto de rocío para control de calidad - CMP SAS",
               },
             ].map((tool) => (

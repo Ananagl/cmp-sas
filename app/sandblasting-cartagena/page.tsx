@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     url: "/sandblasting-cartagena",
     images: [
       {
-        url: "/images/sandblasting-industrial-cartagena-cmp-sas.webp",
+        url: "/images/hero-pintura-remolcador-astillero-cartagena.webp",
         width: 1200,
         height: 630,
         alt: "Sandblasting profesional en Cartagena - CMP SAS",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Sandblasting en Cartagena - CMP SAS",
     description:
       "Servicio profesional de sandblasting certificado NACE/SSPC en Cartagena. Cotización gratuita.",
-    images: ["/images/sandblasting-industrial-cartagena-cmp-sas.webp"],
+    images: ["/images/hero-pintura-remolcador-astillero-cartagena.webp"],
   },
 };
 
@@ -53,10 +53,9 @@ const localBusinessSchema = {
   name: "CMP SAS Corrosion y Proof Coating",
   alternateName: "CMP SAS",
   url: "https://www.cmpcoating.com.co",
-  image: "https://www.cmpcoating.com.co/images/sandblasting-industrial-cartagena-cmp-sas.webp",
+  image: "https://www.cmpcoating.com.co/images/hero-pintura-remolcador-astillero-cartagena.webp",
   description: "Empresa especializada en sandblasting y recubrimientos industriales en Cartagena, Colombia. Certificaciones NACE/SSPC.",
   telephone: "+573137804820",
-  email: "ventasservicios@cmpcoating.com.co",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Cartagena de Indias",
@@ -144,7 +143,7 @@ export default function SandblastingCartagena() {
       <section className="relative py-24 md:py-32 flex items-center bg-[var(--color-brand-dark)]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/sandblasting-industrial-cartagena-cmp-sas.webp"
+            src="/images/hero-pintura-remolcador-astillero-cartagena.webp"
             alt="Servicio de sandblasting profesional en Cartagena - CMP SAS"
             fill
             priority
@@ -522,7 +521,7 @@ export default function SandblastingCartagena() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
               <div className="relative h-64">
                 <Image
-                  src="/images/trabajo-sandblasting-preparacion-superficies.webp"
+                  src="/images/sandblasting-granallado-casco-industrial.webp"
                   alt="Proyecto de sandblasting industrial en Cartagena - preparación de superficie SSPC-SP10"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -539,7 +538,7 @@ export default function SandblastingCartagena() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
               <div className="relative h-64">
                 <Image
-                  src="/images/galeria-proyectos-sandblasting-recubrimientos.webp"
+                  src="/images/recubrimiento-proteccion-casco-naval.webp"
                   alt="Proyecto de recubrimiento anticorrosivo después del sandblasting en Cartagena"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

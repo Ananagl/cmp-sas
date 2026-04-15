@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     url: "/sandblasting-colombia",
     images: [
       {
-        url: "/images/sandblasting-industrial-cartagena-cmp-sas.webp",
+        url: "/images/hero-buque-houma-la-atardecer-astillero.webp",
         width: 1200,
         height: 630,
         alt: "Sandblasting profesional en Colombia - CMP SAS",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Sandblasting en Colombia - CMP SAS",
     description:
       "Servicio profesional de sandblasting certificado NACE/SSPC en Colombia. Cotización gratuita.",
-    images: ["/images/sandblasting-industrial-cartagena-cmp-sas.webp"],
+    images: ["/images/hero-buque-houma-la-atardecer-astillero.webp"],
   },
 };
 
@@ -54,10 +54,9 @@ const localBusinessSchema = {
   name: "CMP SAS Corrosion y Proof Coating",
   alternateName: "CMP SAS",
   url: "https://www.cmpcoating.com.co",
-  image: "https://www.cmpcoating.com.co/images/sandblasting-industrial-cartagena-cmp-sas.webp",
+  image: "https://www.cmpcoating.com.co/images/hero-buque-houma-la-atardecer-astillero.webp",
   description: "Empresa líder en sandblasting y recubrimientos industriales en Colombia. Sede en Cartagena con cobertura nacional.",
   telephone: "+573137804820",
-  email: "ventasservicios@cmpcoating.com.co",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Cartagena de Indias",
@@ -113,7 +112,7 @@ const faqSchema = {
       name: "¿Cómo solicitar una cotización de sandblasting en Colombia?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Solicitar cotización es fácil y gratuito. Puede contactarnos por WhatsApp al +57 313 780 4820, por email a ventasservicios@cmpcoating.com.co, o a través del formulario en nuestra página de contacto. Evaluamos su proyecto, definimos el alcance y le entregamos una propuesta personalizada con precios competitivos y cronograma definido.",
+        text: "Solicitar cotización es fácil y gratuito. Puede contactarnos por WhatsApp al +57 313 780 4820 o a través del formulario en nuestra página de contacto. Evaluamos su proyecto, definimos el alcance y le entregamos una propuesta personalizada con precios competitivos y cronograma definido.",
       },
     },
   ],
@@ -129,7 +128,7 @@ export default function SandblastingColombia() {
       <section className="relative py-24 md:py-32 flex items-center bg-[var(--color-brand-dark)]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/sandblasting-industrial-cartagena-cmp-sas.webp"
+            src="/images/hero-buque-houma-la-atardecer-astillero.webp"
             alt="Servicio de sandblasting profesional en Colombia - CMP SAS"
             fill
             priority
@@ -447,7 +446,7 @@ export default function SandblastingColombia() {
               },
               {
                 q: "¿Cómo solicitar una cotización de sandblasting en Colombia?",
-                a: "Puede contactarnos por WhatsApp al +57 313 780 4820, por email a ventasservicios@cmpcoating.com.co, o a través de nuestro formulario de contacto. Evaluamos su proyecto, definimos el alcance y le entregamos una propuesta personalizada con precios competitivos y cronograma definido.",
+                a: "Puede contactarnos por WhatsApp al +57 313 780 4820 o a través de nuestro formulario de contacto. Evaluamos su proyecto, definimos el alcance y le entregamos una propuesta personalizada con precios competitivos y cronograma definido.",
               },
             ].map((faq) => (
               <div key={faq.q} className="bg-[var(--color-brand-gray)] rounded-2xl p-6">

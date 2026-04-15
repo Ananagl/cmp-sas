@@ -36,7 +36,7 @@ export default function LimpiezaTecnicaPage() {
       <section className="relative py-20 bg-[var(--color-brand-dark)]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/trabajo-sandblasting-preparacion-superficies.webp"
+            src="/images/limpieza-tecnica-hidrolavado-buque-azul.webp"
             alt="Limpieza técnica industrial en Cartagena - CMP SAS"
             fill
             priority

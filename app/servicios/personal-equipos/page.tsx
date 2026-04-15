@@ -36,7 +36,7 @@ export default function PersonalEquiposPage() {
       <section className="relative py-20 bg-[var(--color-brand-dark)]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/equipo-profesional-cmp-sas-cartagena.webp"
+            src="/images/equipo-trabajador-epp-sandblasting.webp"
             alt="Personal especializado y equipos de sandblasting en Cartagena - CMP SAS"
             fill
             priority

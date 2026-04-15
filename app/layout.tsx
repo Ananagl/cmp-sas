@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "CMP SAS Corrosion y Proof Coating",
     images: [
       {
-        url: "/images/sandblasting-industrial-cartagena-cmp-sas.webp",
+        url: "/images/hero-sandblasting-nocturno-buque-cartagena.webp",
         width: 1200,
         height: 630,
         alt: "CMP SAS - Sandblasting y Recubrimientos Industriales en Cartagena",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "CMP SAS - Sandblasting y Recubrimientos Industriales en Cartagena",
     description:
       "Empresa especializada en sandblasting, recubrimientos industriales y protección anticorrosiva en Cartagena, Colombia.",
-    images: ["/images/sandblasting-industrial-cartagena-cmp-sas.webp"],
+    images: ["/images/hero-sandblasting-nocturno-buque-cartagena.webp"],
   },
   robots: { index: true, follow: true },
   icons: {

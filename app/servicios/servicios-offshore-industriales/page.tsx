@@ -36,7 +36,7 @@ export default function OffshoreIndustrialesPage() {
       <section className="relative py-20 bg-[var(--color-brand-dark)]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/sandblasting-industrial-cartagena-cmp-sas.webp"
+            src="/images/offshore-estructura-maritima-trabajo.webp"
             alt="Servicios offshore e industriales en Cartagena - CMP SAS"
             fill
             priority

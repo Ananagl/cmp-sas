@@ -36,7 +36,7 @@ export default function InspeccionCalidadPage() {
       <section className="relative py-20 bg-[var(--color-brand-dark)]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/trabajo-sandblasting-preparacion-superficies.webp"
+            src="/images/inspeccion-control-calidad-superficie.webp"
             alt="Inspección y control de calidad de recubrimientos en Cartagena - CMP SAS"
             fill
             priority

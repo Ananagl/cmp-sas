@@ -47,7 +47,7 @@ export default function SandblastingEcoblastingPage() {
       <section className="relative py-20 bg-[var(--color-brand-dark)]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/sandblasting-industrial-cartagena-cmp-sas.webp"
+            src="/images/sandblasting-proceso-granallado-taller.webp"
             alt="Servicio de sandblasting y ecoblasting profesional en Cartagena - CMP SAS"
             fill
             priority
@@ -110,7 +110,7 @@ export default function SandblastingEcoblastingPage() {
             </div>
             <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/trabajo-sandblasting-preparacion-superficies.webp"
+                src="/images/sandblasting-preparacion-superficie-buque.webp"
                 alt="Proceso de sandblasting en superficie metálica - preparación según norma SSPC en Cartagena"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

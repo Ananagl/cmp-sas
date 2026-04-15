@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     url: "/sandblasting-costa-caribe",
     images: [
       {
-        url: "/images/sandblasting-industrial-cartagena-cmp-sas.webp",
+        url: "/images/hero-trabajo-altura-manlift-ocaso.webp",
         width: 1200,
         height: 630,
         alt: "Sandblasting en la Costa Caribe - CMP SAS",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Sandblasting Costa Caribe - CMP SAS",
     description:
       "Protección anticorrosiva profesional para la Costa Caribe colombiana. NACE/SSPC.",
-    images: ["/images/sandblasting-industrial-cartagena-cmp-sas.webp"],
+    images: ["/images/hero-trabajo-altura-manlift-ocaso.webp"],
   },
 };
 
@@ -54,10 +54,9 @@ const localBusinessSchema = {
   name: "CMP SAS Corrosion y Proof Coating",
   alternateName: "CMP SAS",
   url: "https://www.cmpcoating.com.co",
-  image: "https://www.cmpcoating.com.co/images/sandblasting-industrial-cartagena-cmp-sas.webp",
+  image: "https://www.cmpcoating.com.co/images/hero-trabajo-altura-manlift-ocaso.webp",
   description: "Empresa de sandblasting y recubrimientos industriales especializada en la Costa Caribe colombiana.",
   telephone: "+573137804820",
-  email: "ventasservicios@cmpcoating.com.co",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Cartagena de Indias",
@@ -127,7 +126,7 @@ export default function SandblastingCostaCaribe() {
       <section className="relative py-24 md:py-32 flex items-center bg-[var(--color-brand-dark)]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/sandblasting-industrial-cartagena-cmp-sas.webp"
+            src="/images/hero-trabajo-altura-manlift-ocaso.webp"
             alt="Sandblasting en la Costa Caribe colombiana - CMP SAS"
             fill
             priority

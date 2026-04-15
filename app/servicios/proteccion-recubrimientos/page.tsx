@@ -36,7 +36,7 @@ export default function ProteccionRecubrimientosPage() {
       <section className="relative py-20 bg-[var(--color-brand-dark)]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/galeria-proyectos-sandblasting-recubrimientos.webp"
+            src="/images/recubrimiento-pintura-barco-rojo-acabado.webp"
             alt="Recubrimientos industriales y pintura anticorrosiva en Cartagena - CMP SAS"
             fill
             priority

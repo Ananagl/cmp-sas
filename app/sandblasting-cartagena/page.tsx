@@ -17,6 +17,7 @@ import { Breadcrumbs } from "../components/Breadcrumbs";
 import { CTASection } from "../components/CTASection";
 import { JsonLd } from "../components/JsonLd";
 import { FaqAccordion } from "../components/FaqAccordion";
+import { ImageGallery } from "../components/ImageGallery";
 
 export const metadata: Metadata = {
   title: "Sandblasting en Cartagena - Certificación NACE/SSPC",
@@ -338,22 +339,16 @@ export default function SandblastingCartagena() {
           </div>
 
           {/* Project Gallery */}
-          <div className="grid md:grid-cols-4 gap-4">
-            {[
-              { src: "/images/sandblasting-granallado-casco-industrial.webp", alt: "Sandblasting industrial en casco de buque en Cartagena" },
-              { src: "/images/recubrimiento-proteccion-casco-naval.webp", alt: "Recubrimiento anticorrosivo en casco naval" },
-              { src: "/images/naval-remolcador-mantenimiento-dique.webp", alt: "Mantenimiento de remolcador en dique seco Cartagena" },
-              { src: "/images/equipo-operario-manlift-astillero.webp", alt: "Operario en manlift durante sandblasting en astillero" },
-              { src: "/images/resultado-final-casco-terminado.webp", alt: "Resultado final de sandblasting y pintura en casco" },
-              { src: "/images/offshore-estructura-maritima-trabajo.webp", alt: "Trabajo de sandblasting en estructura marítima offshore" },
-              { src: "/images/hero-sandblasting-casco-buque-nocturno.webp", alt: "Sandblasting nocturno en casco de buque Cartagena" },
-              { src: "/images/recubrimiento-pintura-barco-rojo-acabado.webp", alt: "Acabado final de pintura anticorrosiva en barco" },
-            ].map((img) => (
-              <div key={img.src} className="relative h-48 rounded-xl overflow-hidden">
-                <Image src={img.src} alt={img.alt} fill sizes="(max-width: 768px) 50vw, 25vw" quality={75} className="object-cover hover:scale-105 transition-transform duration-300" />
-              </div>
-            ))}
-          </div>
+          <ImageGallery images={[
+            { src: "/images/sandblasting-granallado-casco-industrial.webp", alt: "Sandblasting industrial en casco de buque en Cartagena" },
+            { src: "/images/recubrimiento-proteccion-casco-naval.webp", alt: "Recubrimiento anticorrosivo en casco naval" },
+            { src: "/images/naval-remolcador-mantenimiento-dique.webp", alt: "Mantenimiento de remolcador en dique seco Cartagena" },
+            { src: "/images/equipo-operario-manlift-astillero.webp", alt: "Operario en manlift durante sandblasting en astillero" },
+            { src: "/images/resultado-final-casco-terminado.webp", alt: "Resultado final de sandblasting y pintura en casco" },
+            { src: "/images/offshore-estructura-maritima-trabajo.webp", alt: "Trabajo de sandblasting en estructura marítima offshore" },
+            { src: "/images/hero-sandblasting-casco-buque-nocturno.webp", alt: "Sandblasting nocturno en casco de buque Cartagena" },
+            { src: "/images/recubrimiento-pintura-barco-rojo-acabado.webp", alt: "Acabado final de pintura anticorrosiva en barco" },
+          ]} />
         </div>
       </section>
 

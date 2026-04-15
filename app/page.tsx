@@ -13,6 +13,7 @@ import {
 import { ServiceCard } from "./components/ServiceCard";
 import { CTASection } from "./components/CTASection";
 import { JsonLd } from "./components/JsonLd";
+import { ImageGallery } from "./components/ImageGallery";
 
 export const metadata: Metadata = {
   title: "Sandblasting y Recubrimientos Industriales en Colombia",
@@ -319,29 +320,16 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { src: "/images/sandblasting-granallado-casco-industrial.webp", alt: "Sandblasting industrial en casco de buque" },
-              { src: "/images/recubrimiento-pintura-barco-rojo-acabado.webp", alt: "Acabado de pintura anticorrosiva en embarcación" },
-              { src: "/images/naval-remolcador-mantenimiento-dique.webp", alt: "Mantenimiento de remolcador en dique seco" },
-              { src: "/images/offshore-estructura-maritima-trabajo.webp", alt: "Sandblasting en estructura marítima offshore" },
-              { src: "/images/resultado-final-casco-terminado.webp", alt: "Resultado final de sandblasting y pintura en casco" },
-              { src: "/images/equipo-operario-manlift-astillero.webp", alt: "Operario en manlift durante sandblasting en astillero" },
-              { src: "/images/recubrimiento-proteccion-casco-naval.webp", alt: "Recubrimiento anticorrosivo en casco naval" },
-              { src: "/images/hero-sandblasting-casco-buque-nocturno.webp", alt: "Sandblasting nocturno en casco de buque" },
-            ].map((img) => (
-              <div key={img.src} className="relative h-48 md:h-56 rounded-2xl overflow-hidden group">
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                  quality={75}
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-            ))}
-          </div>
+          <ImageGallery images={[
+            { src: "/images/sandblasting-granallado-casco-industrial.webp", alt: "Sandblasting industrial en casco de buque" },
+            { src: "/images/recubrimiento-pintura-barco-rojo-acabado.webp", alt: "Acabado de pintura anticorrosiva en embarcación" },
+            { src: "/images/naval-remolcador-mantenimiento-dique.webp", alt: "Mantenimiento de remolcador en dique seco" },
+            { src: "/images/offshore-estructura-maritima-trabajo.webp", alt: "Sandblasting en estructura marítima offshore" },
+            { src: "/images/resultado-final-casco-terminado.webp", alt: "Resultado final de sandblasting y pintura en casco" },
+            { src: "/images/equipo-operario-manlift-astillero.webp", alt: "Operario en manlift durante sandblasting en astillero" },
+            { src: "/images/recubrimiento-proteccion-casco-naval.webp", alt: "Recubrimiento anticorrosivo en casco naval" },
+            { src: "/images/hero-sandblasting-casco-buque-nocturno.webp", alt: "Sandblasting nocturno en casco de buque" },
+          ]} />
 
           <div className="text-center mt-10">
             <Link
